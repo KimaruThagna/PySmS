@@ -15,6 +15,6 @@ dist=np.linalg.norm(np.array(A)-np.array(B))
 client.messages.create(
   to=My_cell,
   from_=my_twilio,
-  body="The euclidian distance between [4,2] and [3,-10] is"+dist,
+  body="The euclidian distance between [4,2] and [3,-10] is"+str(dist)+ "view the image at",
   media_url="https://climacons.herokuapp.com/clear.png")
 
